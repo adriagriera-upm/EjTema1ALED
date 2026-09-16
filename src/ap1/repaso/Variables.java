@@ -8,10 +8,10 @@ public class Variables {
 		 */
 		short diasAno=365;
 		char horaDias=24;
-		char minHora=60;
-		char segMin=minHora;
+		char minporHora=60;
+		char segMin=minporHora;
 		
-		int segAno=diasAno*horaDias*minHora*segMin;
+		int segAno=diasAno*horaDias*minporHora*segMin;
 		
 		System.out.println(segAno);
 		
