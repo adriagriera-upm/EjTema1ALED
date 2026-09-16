@@ -7,7 +7,8 @@ public class Viajante extends Empleado{
 	
 	@Override
 	public int calcularyMostrarSalario(){
-		this.numViajes= (int) Math.random()*10;
+		double random = Math.random()*10;
+		numViajes= (int) random;
 		return (this.sueldoBase+300*this.numViajes);
 	}
 	
