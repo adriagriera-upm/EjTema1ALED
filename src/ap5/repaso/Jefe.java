@@ -8,8 +8,7 @@ public class Jefe extends Empleado {
 	
 	@Override
 	public int calcularyMostrarSalario(){
-		double random = Math.random()*10;
-		antiguedad= (int) random;
+		this.antiguedad = (int) Math.random()*10;
 		return (sueldoBase+500*this.antiguedad);
 	}
 	

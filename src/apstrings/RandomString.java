@@ -1,8 +1,10 @@
-package apstrings.repaso;
-import java.util.*;
+package apstrings;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class RandomString {
-	
+
 	/*
 	 * Ej 10
 	 */
@@ -13,22 +15,15 @@ public class RandomString {
 		List sec2 = new ArrayList<>();
 		for(int i=0;i<s2.length();i++) {
 			sec2.add(s2.indexOf(s2.length()-i));
-		//TODO completar método ej 10
-		return true;
+		
+		
 		}
+		//TODO completar método ej 10
+		return false;
 		
 		
 		
 		
 		
 	}
-	
-
-
-	
-
-
-
 }
-
-
