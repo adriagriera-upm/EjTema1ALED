@@ -14,6 +14,7 @@ public class RandomString {
 		for(int i=0;i<s2.length();i++) {
 			sec2.add(s2.indexOf(s2.length()-i));
 		//TODO completar método ej 10
+		return true;
 		}
 		
 		
