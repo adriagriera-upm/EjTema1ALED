@@ -30,11 +30,6 @@ public class Variables {
 			}
 		System.out.println(suma);
 		
-		/**
-		 * Ej 5
-		 */
-	
-	String.
 	
 	}
 	
