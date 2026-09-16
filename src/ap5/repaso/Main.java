@@ -49,9 +49,5 @@ public class Main {
 			System.out.println("El salario del viajante número " + (k+1) + " es " + empresa.get(k+numjefes+numempleados).calcularyMostrarSalario());
 			
 		}
-		
-		
-		
-
 	}
 }
