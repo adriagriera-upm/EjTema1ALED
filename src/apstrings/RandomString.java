@@ -1,7 +1,6 @@
 package apstrings;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class RandomString {
 
@@ -10,20 +9,20 @@ public class RandomString {
 	 */
 	
 	public static boolean isPalindrome(String secuencia) {
-		String s1 = secuencia.substring(0,secuencia.length()/2);
-		String s2 = secuencia.substring(secuencia.length()/2);
-		List sec2 = new ArrayList<>();
-		for(int i=0;i<s2.length();i++) {
-			sec2.add(s2.indexOf(s2.length()-i));
-		
-		
-		}
-		//TODO completar método ej 10
-		return false;
-		
-		
-		
-		
-		
+		String nospace = secuencia.replace(" ", "");
+		String reversed = new StringBuilder(nospace).reverse().toString();
+		System.out.println(reversed);
+		System.out.println(nospace);
+		return (nospace.equals(reversed));
 	}
+	
+	public static void main(String[] args){
+		System.out.println(RandomString.isPalindrome("dabale arroz a la zorra el abad"));
+		
+	
+	}
+
+	
 }
+	
+	

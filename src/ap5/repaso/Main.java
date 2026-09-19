@@ -50,6 +50,27 @@ public class Main {
 			
 		}
 		
+		/*
+		 *Ejercicio 6
+		 */
+		List<CuentaBancaria> listaCuentas = new ArrayList<CuentaBancaria>();
+		
+		CuentaBancaria cuentaNormal = new CuentaBancaria("Jorgina",20261206,67,2342);
+		CuentaPlazoFijo cuentaFija = new CuentaPlazoFijo("Carlangos",20252203,42,536,20302203);
+		CuentaVIP cuentaVIP = new CuentaVIP("Albania",20262301,80,5540,-200);
+		try {
+			cuentaNormal.retirarDinero(20);
+			cuentaFija.transferenciaCuenta(25, cuentaNormal);
+			cuentaVIP.retirarDinero(5600);
+			cuentaNormal.ingresarDinero(400);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		listaCuentas.add(cuentaNormal);
+		listaCuentas.add(cuentaFija);
+		listaCuentas.add(cuentaVIP);
+		
 		
 		
 
