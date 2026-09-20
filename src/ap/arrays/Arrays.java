@@ -87,7 +87,7 @@ public class Arrays {
 		/*
 		 * Ejercicio 19
 		 */
-		int[] array4 = {2,4,8,2,6,0,7};
+		int[] array4 = {2,4,8,2,6,0,7,1};
 		array4 = Subsample(array4,2);
 		
 		/*
