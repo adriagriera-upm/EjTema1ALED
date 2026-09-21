@@ -21,7 +21,7 @@ public class Main {
 		 */
 		MyDate hoy;
 		try {
-			hoy = new MyDate(19,9,2025);
+			hoy = new MyDate(31,2,2025);
 			System.out.println(hoy.toString());
 			hoy.setYear(2026);
 			System.out.println(hoy.toString());

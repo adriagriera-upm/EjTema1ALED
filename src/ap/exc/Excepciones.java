@@ -5,7 +5,7 @@ public class Excepciones {
 	/*
 	 * Ejercicio 1
 	 */
-	public float[] conversor(String[] arr) {
+	public static float[] conversor(String[] arr) {
 		
 		try {
 			float[] newarr = new float[arr.length];
@@ -14,14 +14,31 @@ public class Excepciones {
 				}
 			return newarr;
 		
-		} catch(Exception e) {
+		} catch(NumberFormatException e) {
+			e.printStackTrace();
 			System.out.println("Algún valor del array no es válido");
 			return null;
+		} finally {
+			
 		}
 	}
 	
+	public static void main(String[] args) {
+			try{
+				String[] arr = {"2","3","453","562","5","as"};
+				float[] newarr = conversor(arr);
+			} finally {
+				System.out.println("Lo siento mucho, tendría que repetir FPRG");
+			}
+			
+			
+	
+		
+		
+	}
 	/*
-	 * Ejercicio 2
+	 * Ejercicio 5
 	 */
+	
 	
 }

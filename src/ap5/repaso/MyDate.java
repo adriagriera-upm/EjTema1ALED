@@ -7,11 +7,16 @@ public class MyDate {
 	private int year; //Suena muy mal en español
 	
 	public MyDate(int dia, int mes, int year) throws Exception{
-		
+		boolean diamuyalto = (dia > 30 && (mes%2==0) || (dia>28 && mes==2 && year%4 != 0) || (dia>29 && mes==2 && year%4 == 0));
+		boolean mesmuyalto = (mes > 12);
+		if(diamuyalto || mesmuyalto) {
+			throw new Exception("Fecha no válida");
+		}
 		this.dia=dia;
 		this.mes=mes;
 		this.year=year;
-		boolean diamuyalto = (dia > 30 && (mes%2==0)); //TODO completar clasex
+		
+		
 	}
 	
 	public int getDay() {
