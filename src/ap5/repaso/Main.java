@@ -19,10 +19,15 @@ public class Main {
 		/*
 		 * Ejercicio 2
 		 */
-		MyDate hoy = new MyDate(19,9,2025);
-		System.out.println(hoy.toString());
-		hoy.setYear(2026);
-		System.out.println(hoy.toString());
+		MyDate hoy;
+		try {
+			hoy = new MyDate(19,9,2025);
+			System.out.println(hoy.toString());
+			hoy.setYear(2026);
+			System.out.println(hoy.toString());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		/*
 		 * Ejercicio 5

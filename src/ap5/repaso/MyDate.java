@@ -6,10 +6,12 @@ public class MyDate {
 	private int mes;
 	private int year; //Suena muy mal en español
 	
-	public MyDate(int dia, int mes, int year) {
+	public MyDate(int dia, int mes, int year) throws Exception{
+		
 		this.dia=dia;
 		this.mes=mes;
 		this.year=year;
+		boolean diamuyalto = (dia > 30 && (mes%2==0)); //TODO completar clasex
 	}
 	
 	public int getDay() {
