@@ -1,5 +1,7 @@
 package ap.listas;
 
+import java.util.List;
+
 /**
  * Class representing one measurement. Each measurement is made up of an
  * arbitrary number of channels, each containing a float value representing a
@@ -9,7 +11,7 @@ package ap.listas;
  */
 public class Measurement {
 
-	private float[] channels;
+	List<Float> channels;
 
 	/**
 	 * Builds a new measurement from an array of floats containing the values
@@ -17,7 +19,7 @@ public class Measurement {
 	 * 
 	 * @param channels The values measured by each channel.
 	 */
-	public Measurement(float[] channels) {
+	public Measurement(List<Float> channels) {
 		this.channels = channels;
 	}
 	
@@ -29,7 +31,7 @@ public class Measurement {
 	 * @return The value measured.
 	 */
 	public float getChannel(int numChannel) {
-		return channels[numChannel];
+		return channels.get(numChannel);
 	}
 
 	/**
@@ -38,7 +40,16 @@ public class Measurement {
 	 * @return The number of channels.
 	 */
 	public int numChannels() {
-		return channels.length;
+		return channels.size();
+	}
+	
+	public String toString() {
+		String s1 = "";
+		for(float ch : channels) {
+			s1 = s1 + ", " + Float.toString(ch);
+		}
+		
+		return s1;
 	}
 	
 }
