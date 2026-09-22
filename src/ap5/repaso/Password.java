@@ -12,8 +12,14 @@ public class Password {
 	
 	public Password(int longitud) {
 		this.longitud=longitud;
-		double password= (Math.random()*Math.pow(10, longitud));
-		Double.toString(password);
+		int i=1;
+		double value = 0;
+		while(i <= longitud) {
+			value = value + Math.random()*Math.pow(10, i);
+			i++;
+		}
+		this.password= Double.toString(value);
+		
 	}
 	
 	public boolean isStrong() {
